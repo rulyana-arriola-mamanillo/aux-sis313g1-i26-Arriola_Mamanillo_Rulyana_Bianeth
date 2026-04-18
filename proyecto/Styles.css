@@ -1,0 +1,191 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+body.menu-page {
+    font-family: Tahoma, 'MS Sans Serif', sans-serif;
+    font-size: 11px;
+    background: #ffffff;
+    margin: 0;
+    padding: 10px 0 0 0;
+}
+.ventana-sistema {
+    width: calc(100% - 100px);
+    margin-left: 0;
+    margin-right: 100px;
+    margin-top: 0;
+    background: #ece9d8;
+    border: 1px solid #000000;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+}
+
+.barra-sistema-gris {
+    background: linear-gradient(to bottom, #d4d0c8 0%, #b8b4ac 100%);
+    height: 22px;
+    border-bottom: 1px solid #808080;
+    padding-left: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.titulo-sistema {
+    font-weight: bold;
+    font-size: 11px;
+    color: #000000;
+    letter-spacing: 0.5px;
+}
+
+.header-vsiaf {
+    background: linear-gradient(to bottom, #6ba5d6 0%, #2e5c8a 100%);
+    height: 85px;
+    position: relative;
+    border-bottom: 1px solid #1a3a5a;
+}
+
+.bandera-bolivia {
+    position: absolute;
+    left: 15px;
+    top: 8px;
+    width: 65px;
+    height: 45px;
+    background: linear-gradient(to bottom, 
+        #d52b1e 0%, #d52b1e 33.33%, 
+        #f4e400 33.33%, #f4e400 66.66%, 
+        #007934 66.66%, #007934 100%);
+    box-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+}
+
+.logo-vsiaf {
+    position: absolute;
+    left: 95px;
+    top: 15px;
+    font-size: 42px;
+    font-weight: bold;
+    font-style: italic;
+    color: white;
+    letter-spacing: 3px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+    font-family: 'Times New Roman', serif;
+}
+
+.sub-logo {
+    position: absolute;
+    left: 100px;
+    top: 52px;
+    font-size: 11px;
+    color: white;
+}
+
+.datos-user {
+    position: absolute;
+    right: 15px;
+    top: 8px;
+    color: white;
+    font-size: 10px;
+    text-align: right;
+    line-height: 1.4;
+    font-weight: bold;
+}
+
+.barra-info-blanca {
+    background: white;
+    padding: 8px 20px;
+    font-size: 11px;
+    border-bottom: 1px solid #999999;
+}
+
+.linea-info {
+    margin-bottom: 2px;
+}
+
+.label-info {
+    font-weight: bold;
+    color: #000080;
+    width: 75px;
+    display: inline-block;
+}
+
+.valor-info {
+    display: inline-block;
+    margin-right: 15px;
+    font-weight: bold;
+}
+
+.nombre-info {
+    color: #000080;
+}
+
+.contenedor-principal {
+    display: flex;
+    height: 550px;
+    width: 100%;
+}
+
+.menu-lateral {
+    width: 220px;
+    background: #ece9d8;
+    border-right: 2px solid #808080;
+    padding: 15px 10px;
+    flex-shrink: 0;
+}
+
+.titulo-menu {
+    font-weight: bold;
+    font-size: 12px;
+    margin-bottom: 12px;
+    padding-left: 5px;
+    color: #000080;
+}
+
+.btn-menu {
+    display: block;
+    width: 100%;
+    background: linear-gradient(to bottom, #e8f4ff 0%, #b8d4f0 50%, #a0c4e8 51%, #c8e0f8 100%);
+    border: 1px solid #7f9db9;
+    color: #000000;
+    padding: 5px 8px;
+    font-family: Tahoma, sans-serif;
+    font-size: 11px;
+    cursor: pointer;
+    margin-bottom: 4px;
+    text-align: center;
+    text-decoration: none;
+    box-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+}
+
+.btn-menu.activo {
+    background: linear-gradient(to bottom, #c8e0f8 0%, #a0c4e8 50%, #90b4e0 51%, #b8d4f0 100%);
+    border: 1px solid #316ac5;
+    box-shadow: inset 1px 1px 3px rgba(0,0,0,0.2);
+}
+.contenido-central {
+    flex: 1;
+    position: relative;
+    min-height: 500px;
+    
+
+    background: 
+        linear-gradient(rgba(91, 155, 213, 0.7), rgba(91, 155, 213, 0.7)),
+        url('imagen.jpg');
+    background-size: cover;
+    background-position: center 25%;
+    background-repeat: no-repeat;
+}
+
+.texto-potosi {
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+    color: white;
+    font-style: italic;
+    font-size: 24px;
+    z-index: 2;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+}
